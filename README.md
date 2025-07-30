@@ -1,7 +1,6 @@
 ## 👀 Demo interactivo
 
-> Próximamente una versión alojada en GitHub Pages o Netlify.  
-> ¡Mantente atento para disfrutarlo online!
+Accede a la versión en línea del juego aquí:[🎯 Jugar ahora en GitHub Pages](https://hgarciaospina.github.io/amigo-secreto/)
 
 ---
 
@@ -14,9 +13,9 @@
 3. 🔁 Cuando hayas ingresado todos los nombres, haz clic en el botón **"Sortear amigo"**.
 4. 🎁 Se generará una lista con las asignaciones secretas de cada participante.
 
-> 🔒 *La asignación es aleatoria y nadie se asigna a sí mismo.*
+> 🔒 _La asignación es aleatoria y nadie se asigna a sí mismo._
 
-> 📌 *Al volver a hacer clic en "Sortear amigo", se reinicia la lista para una nueva ronda.*
+> 📌 _Al volver a hacer clic en "Sortear amigo", se reinicia la lista para una nueva ronda._
 
 <p align="center">
   <img src="./assets/amigo-secreto.png" alt="Imagen de amigo secreto" width="300"/>
