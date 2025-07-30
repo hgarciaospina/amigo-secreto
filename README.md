@@ -17,6 +17,8 @@ Accede a la versión en línea del juego aquí:[🎯 Jugar ahora en GitHub Pages
 
 > 📌 _Al volver a hacer clic en "Sortear amigo", se reinicia la lista para una nueva ronda._
 
+> 🚫 _Una vez iniciado el sorteo, no se pueden agregar nuevos amigos. Si deseas realizar un nuevo sorteo con otros nombres, reinicia el juego._
+
 <p align="center">
   <img src="./assets/amigo-secreto.png" alt="Imagen de amigo secreto" width="300"/>
 </p>
