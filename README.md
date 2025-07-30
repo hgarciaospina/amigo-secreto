@@ -1,4 +1,3 @@
----
 ## 👀 Demo interactivo
 
 > Próximamente una versión alojada en GitHub Pages o Netlify.  
@@ -42,4 +41,4 @@ Puedes usarlo, modificarlo y compartirlo libremente.
 ## ❤️ Autor
 
 Desarrollado con dedicación por [Henry García Ospina](https://github.com/hgarciaospina)  
-Sígueme en [LinkedIn](https://www.linkedin.com/in/henry-garc%C3%ADa-ospina)
+Sígueme en [LinkedIn](https://www.linkedin.com/in/henry-garcía-ospina)
