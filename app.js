@@ -1,6 +1,7 @@
 let listaAmigos = [];
 let listaAmigosSorteados = [];
 let lista = "";
+let juegoIniciado = false; // ✅ NUEVO: control del estado del juego
 
 // Al cargar la página, desactiva el botón de sorteo e inicializa contador
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,6 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
  * Agrega un nuevo nombre a la lista si es válido y no está repetido.
  */
 function agregarAmigo() {
+  if (juegoIniciado) {
+    alert(
+      "El juego ya ha comenzado. Debes iniciar un nuevo juego para agregar amigos."
+    );
+    return;
+  }
+
   const input = document.getElementById("amigo");
   let nombreDelAmigo = input.value.trim();
 
@@ -106,6 +114,9 @@ function sortearAmigo() {
     return;
   }
 
+  // Marcar inicio del juego
+  juegoIniciado = true;
+
   // Validación: ya se sortearon todos
   if (listaAmigosSorteados.length === listaAmigos.length) {
     alert("Ya se sortearon todos los amigos.");
@@ -138,6 +149,16 @@ function sortearAmigo() {
 
   actualizarContador(); // actualiza cuántos faltan
   actualizarBotonSortear(); // actualiza botón
+
+  // ✅ NUEVO: Al finalizar el último sorteo, mostrar mensaje y reiniciar
+  if (listaAmigosSorteados.length === listaAmigos.length) {
+    setTimeout(() => {
+      alert("🎉 ¡Fin del juego! Todos los amigos han sido sorteados.");
+      reiniciarListas();
+      actualizarBotonSortear();
+      actualizarContador();
+    }, 200); // pequeño delay para que se vea el último nombre sorteado
+  }
 }
 
 /**
@@ -146,6 +167,7 @@ function sortearAmigo() {
 function reiniciarListas() {
   listaAmigos = [];
   listaAmigosSorteados = [];
+  juegoIniciado = false; // ✅ permitir agregar nuevamente
   document.getElementById("listaAmigos").innerHTML = "";
   document.getElementById("resultado").innerHTML = "";
   document.getElementById("amigo").value = "";
